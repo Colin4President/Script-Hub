@@ -1,7 +1,7 @@
 local Notification = loadstring(game:HttpGet("https://api.irisapp.ca/Scripts/IrisBetterNotifications.lua"))()
 getgenv().IrisAd = true;
 
-Notification.Notify("Kater GUI", "NO TIMEONUT", "http://www.roblox.com/asset/?id=8059768488", {
+Notification.Notify("Kater GUI", "NO TIMEOUT", "http://www.roblox.com/asset/?id=8059768488", {
     Duration = 8,
 
     TitleSettings = {
