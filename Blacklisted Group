@@ -1,0 +1,5 @@
+game.Players.PlayerAdded:Connect(function(player)
+	if player:IsInGroup(4137651) or player:IsInGroup(4459145) then --replace "4137651" and "4459145" with group ids you want
+		player:Kick("\n GET DA FUCK OUT OF THIS FUCKING GROUP!") --change the reason if you want "\n" creates a new line
+	end
+end)
