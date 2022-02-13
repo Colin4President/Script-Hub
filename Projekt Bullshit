@@ -136,8 +136,7 @@ function SaveBullshitSettings()
 		for i, v in next, Bullshit.Colors do
 			temp.Colors[i] = tostring(v)
 		end
-		writefile("
-    Bullshit.txt", HTTP:JSONEncode(temp))
+		writefile("ProjectBullshit.txt", HTTP:JSONEncode(temp))
 	end)
 	if not succ then
 		error(out)
@@ -1269,7 +1268,7 @@ function InitMain()
 	Title.BackgroundTransparency = 1
 	Title.Size = UDim2.new(1, 0, 0, 50)
 	Title.Font = Enum.Font.SourceSansBold
-	Title.Text = "Project: Bullshit\nScript saved by: Kater#3875\nVersion 3.5.5 (Its very old!)"
+	Title.Text = "Project: Bullshit\nMade by: Racist Dolphin#5199\nVersion 3.5.5 (Kater Is using)"
 	Title.TextColor3 = Color3.new(1, 1, 1)
 	Title.TextSize = 18
 	Title.TextTransparency = 0.5
@@ -1673,7 +1672,7 @@ function InitMain()
 	TextLabel.Font = Enum.Font.SourceSansBold
 	TextLabel.Text = [[
 Scripting by: Racist Dolphin#5199
-This script is now saved by Kater#3875
+GUI by: SOMEONE WHO WANTS HIS NAME HIDDEN.
 
 To hide/show the GUI press the "P" key on your keyboard.
 
@@ -1698,7 +1697,7 @@ A: Blame bullet spread, try and control how often you fire. (Murder Mystery 2 = 
 
 Change Log:
 13/02/2022:
-+ Kater is a bitch! and is using my script :)
++ Kater is using it in his GUI and he is a bitch!
 
 3/10/2018:
 + Fixed how chams broke when a player respawned.
@@ -2884,7 +2883,7 @@ Run:BindToRenderStep("UpdateInfo", 1000, function()
 		-- My Position
 		if MyTor then
 			local Pos = MyTor.Position
-			DebugMenu["Position"].Text = "Katers Position: (X: " .. string.format("%.3f", Pos.x) .. " Y: " .. string.format("%.3f", Pos.Y) .. " Z: " .. string.format("%.3f", Pos.Z) .. ")"
+			DebugMenu["Position"].Text = "My Position: (X: " .. string.format("%.3f", Pos.x) .. " Y: " .. string.format("%.3f", Pos.Y) .. " Z: " .. string.format("%.3f", Pos.Z) .. ")"
 		end
 
 		-- FPS
