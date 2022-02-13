@@ -100,13 +100,13 @@ lblFUCKEMALL.Position = UDim2.new (0.025, 0,0.856, 0)
 lblFUCKEMALL.Size = UDim2.new (0, 301,0, 27)
 lblFUCKEMALL.Visible = true
 lblFUCKEMALL.Font = Enum.Font.SourceSansBold
-lblFUCKEMALL.Text = "FUCK AND FUCK"
+lblFUCKEMALL.Text = "HORNY KATER"
 lblFUCKEMALL.TextColor3 = Color3.new(0, 0, 0)
 lblFUCKEMALL.TextSize = 20
  
 ImageLabel.Name = "ImageLabel"
 ImageLabel.Parent = FGUI
-ImageLabel.Image = "http://www.roblox.com/asset/?id=42837..."
+ImageLabel.Image = "http://www.roblox.com/asset/?id=381735789"
 ImageLabel.BorderSizePixel = 1
 ImageLabel.Position = UDim2.new (0.274, 0,0.358, 0)
 ImageLabel.Size = UDim2.new (0, 106,0, 121)
