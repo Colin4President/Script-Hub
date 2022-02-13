@@ -1,0 +1,26 @@
+wait(1)
+print("ANTI KICK STATUS [OFF]")
+wait(2)
+table.foreach(workspace:GetChildren(),function(a,b) if b.Name=="Anti_Kicklul" then game:GetService("Workspace").Anti_Kicklul:Destroy() end end)
+wait(1)
+warn("ANTI KICK STATUS [ON]")
+wait(1.5)
+Instance.new("BoolValue",workspace).Name="Anti_Kicklul"
+AK=math.random(1,2)
+if AK==1 then
+    game.Workspace.Anti_Kicklul.Value = true
+elseif AK==2 then
+    game.Workspace.Anti_Kicklul.Value = false
+end
+wait(2.5)
+AntiKick = game.Workspace.Anti_Kicklul.Value
+if AntiKick == true then
+print("Anti kick has loaded and is now running. Took [8] Seconds!")
+elseif AntiKick == false then
+print("Anti kick failed to run! Run Script again")
+end
+wait(1)
+if AntiKick ==true then
+game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+print("ANTI KICK STATUS [ON]")
+end
