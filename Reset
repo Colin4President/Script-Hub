@@ -1,0 +1,10 @@
+for i,v in ipairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+		if v.Name == "RightElbow" or v.Name == "RightKnee" or v.Name == "RightAnkle" or v.Name == "RightWrist" or v.Name == "RightElbow" or v.Name == "RightShoulder" or "LeftElbow" or v.Name == "LeftKnee" or v.Name == "LeftAnkle" or v.Name == "LeftWrist" or v.Name == "LeftElbow" or v.Name == "LeftShoulder" or v.Name == "Neck" then
+			if v:IsA("Motor6D") and v.Name ~= "Root" and v.Name ~= "Waist" then
+				v:Destroy()
+			end
+		end
+	end
+ 
+ 
+end)
