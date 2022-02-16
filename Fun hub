@@ -1,0 +1,919 @@
+--V0.0.3
+--EEEEE
+--FunHUb!
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_Roundify_12px = Instance.new("ImageLabel")
+local infyeild = Instance.new("TextButton")
+local JJsynapse = Instance.new("TextButton")
+local CPS_Counter = Instance.new("ScreenGui")
+local LeftCPS = Instance.new("TextLabel")
+local RightCPS = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Frame.Position = UDim2.new(0.147641808, 0, 0.172877789, 0)
+Frame.Size = UDim2.new(0, 931, 0, 631)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Position = UDim2.new(0.0208188221, 0, 0.0370570943, 0)
+TextLabel.Size = UDim2.new(0, 131, 0, 62)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "Fun"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 90.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.161527738, 0, 0.0370570943, 0)
+TextLabel_2.Size = UDim2.new(0, 159, 0, 62)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.Ubuntu
+TextLabel_2.Text = "Hub"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 90.000
+
+TextLabel_Roundify_12px.Name = "TextLabel_Roundify_12px"
+TextLabel_Roundify_12px.Parent = TextLabel_2
+TextLabel_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_Roundify_12px.BackgroundTransparency = 1.000
+TextLabel_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_Roundify_12px.Image = "rbxassetid://3570695787"
+TextLabel_Roundify_12px.ImageColor3 = Color3.fromRGB(255, 170, 0)
+TextLabel_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TextLabel_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextLabel_Roundify_12px.SliceScale = 0.120
+
+infyeild.Name = "infyeild"
+infyeild.Parent = Frame
+infyeild.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+infyeild.Position = UDim2.new(0.0784375742, 0, 0.252814382, 0)
+infyeild.Size = UDim2.new(0, 229, 0, 50)
+infyeild.Font = Enum.Font.SourceSans
+infyeild.Text = "Infyeild"
+infyeild.TextColor3 = Color3.fromRGB(255, 170, 0)
+infyeild.TextSize = 40.000
+
+JJsynapse.Name = "JJsynapse"
+JJsynapse.Parent = Frame
+JJsynapse.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+JJsynapse.Position = UDim2.new(0.565609276, 0, 0.253593683, 0)
+JJsynapse.Size = UDim2.new(0, 365, 0, 50)
+JJsynapse.Font = Enum.Font.SourceSans
+JJsynapse.Text = "JJsynapse(Rip off jjsploit)"
+JJsynapse.TextColor3 = Color3.fromRGB(0, 0, 0)
+JJsynapse.TextSize = 40.000
+
+CPS_Counter.Name = "CPS_Counter"
+CPS_Counter.Parent = Frame
+CPS_Counter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+LeftCPS.Name = "LeftCPS"
+LeftCPS.Parent = CPS_Counter
+LeftCPS.AnchorPoint = Vector2.new(0, 1)
+LeftCPS.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+LeftCPS.BackgroundTransparency = 0.700
+LeftCPS.BorderSizePixel = 0
+LeftCPS.Position = UDim2.new(0.909940004, 0, 0.0687961578, 0)
+LeftCPS.Size = UDim2.new(0.0799266249, 0, 0.0364864916, 0)
+LeftCPS.Font = Enum.Font.Arcade
+LeftCPS.Text = "LMB_CPS"
+LeftCPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+LeftCPS.TextScaled = true
+LeftCPS.TextSize = 14.000
+LeftCPS.TextStrokeTransparency = 0.000
+LeftCPS.TextWrapped = true
+
+RightCPS.Name = "RightCPS"
+RightCPS.Parent = CPS_Counter
+RightCPS.AnchorPoint = Vector2.new(0, 1)
+RightCPS.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+RightCPS.BackgroundTransparency = 0.700
+RightCPS.BorderSizePixel = 0
+RightCPS.Position = UDim2.new(0.909940004, 0, 0.104422688, 0)
+RightCPS.Size = UDim2.new(0.0799266249, 0, 0.0364864916, 0)
+RightCPS.Font = Enum.Font.Arcade
+RightCPS.Text = "RMB_CPS"
+RightCPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+RightCPS.TextScaled = true
+RightCPS.TextSize = 14.000
+RightCPS.TextStrokeTransparency = 0.000
+RightCPS.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.0204662159, 0, 0.931950927, 0)
+TextButton.Size = UDim2.new(0, 161, 0, 28)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "FPSbooster"
+TextButton.TextColor3 = Color3.fromRGB(255, 170, 0)
+TextButton.TextSize = 40.000
+
+-- Scripts:
+
+local function JRZZX_fake_script() -- CPS_Counter.MainHandler 
+	local script = Instance.new('LocalScript', CPS_Counter)
+
+	local plr = game.Players.LocalPlayer
+	local mouse = plr:GetMouse()
+	local cpsLabel_L = script.Parent:WaitForChild("LeftCPS")
+	local cpsLabel_R = script.Parent:WaitForChild("RightCPS")
+	local clicks = 0
+	local clicksR = 0
+	
+	mouse.Button1Down:Connect(function()
+		clicks = clicks + 1
+	end)
+	mouse.Button2Down:Connect(function()
+		clicksR = clicksR + 1
+	end)
+	
+	while wait() do
+		spawn(function()
+			--if clicks > 0 then
+				wait(1)
+				cpsLabel_L.Text = "LeftMB_CPS: " .. clicks
+				clicks = 0
+			--end
+		end)
+		--if clicksR > 0 then
+			wait(1)
+			cpsLabel_R.Text = "RightMB_CPS: " .. clicksR
+			clicksR = 0
+		--end
+	end
+end
+coroutine.wrap(JRZZX_fake_script)()
+infyeild.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://github.com/MarsQQ/ScriptHubScripts/blob/master/FPS%20Boost'),true))()
+end)
+JJsynapse.MouseButton1Down:connect(function()
+	local SynapseX = Instance.new("ScreenGui")
+	local Synapseopen = Instance.new("Frame")
+	local Synapseopenbottom = Instance.new("Frame")
+	local Wearedevs = Instance.new("TextLabel")
+	local Version = Instance.new("TextLabel")
+	local Synapseopencenter = Instance.new("Frame")
+	local Attachtitle = Instance.new("TextLabel")
+	local Workingtitle = Instance.new("TextLabel")
+	local Attach = Instance.new("TextButton")
+	local Synapseopentop = Instance.new("Frame")
+	local Synapsetitle = Instance.new("TextLabel")
+	local Closeopen = Instance.new("TextButton")
+	local Synapsemain = Instance.new("Frame")
+	local Synapsemaintop = Instance.new("Frame")
+	local Synapsemaintitle = Instance.new("TextLabel")
+	local Closemain = Instance.new("TextButton")
+	local Synapsemaincenter = Instance.new("Frame")
+	local Synapsebuttons = Instance.new("TextButton")
+	local Synapselua = Instance.new("TextButton")
+	local Synapsecommands = Instance.new("TextButton")
+	local Synapsecommonbutton = Instance.new("TextLabel")
+	local Synapseadmin = Instance.new("TextButton")
+	local Synapseinfjump = Instance.new("TextButton")
+	local Synapsefly = Instance.new("TextButton")
+	local Useless = Instance.new("Folder")
+	local Synapsebroken1 = Instance.new("TextButton")
+	local Synapsebroken2 = Instance.new("TextButton")
+	local Synapsebroken3 = Instance.new("TextButton")
+	local Synapsebroken4 = Instance.new("TextButton")
+	local Synapsebrokennoclip6 = Instance.new("TextButton")
+	local Synapsebroken5 = Instance.new("TextButton")
+	local Synapsebroken7 = Instance.new("TextButton")
+	local Synapsebroken8 = Instance.new("TextButton")
+	local Synapsebroken9 = Instance.new("TextButton")
+	local Synapsemainbottom = Instance.new("Frame")
+	local Synapsemainexecutor = Instance.new("Frame")
+	local Executor = Instance.new("TextBox")
+	local Execute = Instance.new("TextButton")
+	local Openfile = Instance.new("TextLabel")
+	local Synapsead1 = Instance.new("Frame")
+	local Synapseadtext1 = Instance.new("TextLabel")
+	local Synapseadimage1 = Instance.new("ImageLabel")
+	local Synapseadclose1 = Instance.new("TextButton")
+	local Synapsead2 = Instance.new("Frame")
+	local Synapseadtext2 = Instance.new("TextLabel")
+	local Synapseadclose2 = Instance.new("TextButton")
+	local Synapseadimage2 = Instance.new("ImageLabel")
+	local Synapsead3 = Instance.new("Frame")
+	local Synapseadtext3 = Instance.new("TextLabel")
+	local Synapseadimage3 = Instance.new("ImageLabel")
+	local Synapseclose3 = Instance.new("TextButton")
+	local Synapsead4 = Instance.new("Frame")
+	local Synapseimage4 = Instance.new("ImageLabel")
+	local Synapsead5 = Instance.new("Frame")
+	local Synapseadtext5 = Instance.new("TextLabel")
+	local Synapseadtext5dash1 = Instance.new("TextLabel")
+	local Synapseadimage5 = Instance.new("ImageLabel")
+	local Synapseadimage5dash1 = Instance.new("ImageLabel")
+	local Synapsead6 = Instance.new("Frame")
+	local Synapseadtext6 = Instance.new("TextLabel")
+	local Synapseadimage6 = Instance.new("ImageLabel")
+	local Synapsead7 = Instance.new("Frame")
+	local Synapseadtext7 = Instance.new("TextLabel")
+	local Synapseadimage7 = Instance.new("ImageLabel")
+
+
+	--Properties:
+
+	SynapseX.Name = "SynapseX"
+	SynapseX.Parent = game.CoreGui
+
+	Synapseopen.Name = "Synapseopen"
+	Synapseopen.Parent = SynapseX
+	Synapseopen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseopen.Position = UDim2.new(0.286129981, 0, 0.262214988, 0)
+	Synapseopen.Size = UDim2.new(0, 439, 0, 32)
+	Synapseopen.Active = true
+	Synapseopen.Draggable = true
+
+	Synapseopenbottom.Name = "Synapseopenbottom"
+	Synapseopenbottom.Parent = Synapseopen
+	Synapseopenbottom.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseopenbottom.Position = UDim2.new(0, 0, 7.625, 0)
+	Synapseopenbottom.Size = UDim2.new(0, 440, 0, 23)
+
+	Wearedevs.Name = "Wearedevs"
+	Wearedevs.Parent = Synapseopenbottom
+	Wearedevs.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Wearedevs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Wearedevs.Position = UDim2.new(0.270454556, 0, 0, 0)
+	Wearedevs.Size = UDim2.new(0, 200, 0, 23)
+	Wearedevs.Font = Enum.Font.SourceSansBold
+	Wearedevs.Text = "wearedevs.net"
+	Wearedevs.TextColor3 = Color3.fromRGB(254, 255, 248)
+	Wearedevs.TextSize = 14.000
+
+	Version.Name = "Version"
+	Version.Parent = Synapseopenbottom
+	Version.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Version.Position = UDim2.new(0.8659091, 0, 0, 0)
+	Version.Size = UDim2.new(0, 58, 0, 23)
+	Version.Font = Enum.Font.SourceSans
+	Version.Text = "v6.6.6"
+	Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Version.TextSize = 14.000
+
+	Synapseopencenter.Name = "Synapseopencenter"
+	Synapseopencenter.Parent = Synapseopen
+	Synapseopencenter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseopencenter.Position = UDim2.new(0, 0, 1, 0)
+	Synapseopencenter.Size = UDim2.new(0, 440, 0, 212)
+
+	Attachtitle.Name = "Attachtitle"
+	Attachtitle.Parent = Synapseopencenter
+	Attachtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Attachtitle.BorderColor3 = Color3.fromRGB(254, 246, 255)
+	Attachtitle.Position = UDim2.new(0.111363634, 0, 0.160377353, 0)
+	Attachtitle.Size = UDim2.new(0, 342, 0, 36)
+	Attachtitle.Font = Enum.Font.SourceSans
+	Attachtitle.Text = "You must attach Synapse X to a game first"
+	Attachtitle.TextColor3 = Color3.fromRGB(51, 51, 51)
+	Attachtitle.TextSize = 22.000
+
+
+	Workingtitle.Name = "Workingtitle"
+	Workingtitle.Parent = Synapseopencenter
+	Workingtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Workingtitle.BorderColor3 = Color3.fromRGB(255, 253, 245)
+	Workingtitle.Position = UDim2.new(0.272727281, 0, 0.301886797, 0)
+	Workingtitle.Size = UDim2.new(0, 200, 0, 20)
+	Workingtitle.Font = Enum.Font.SourceSans
+	Workingtitle.Text = "Working as of 6/9/21"
+	Workingtitle.TextColor3 = Color3.fromRGB(80, 80, 80)
+	Workingtitle.TextSize = 16.000
+
+	Attach.Name = "Attach"
+	Attach.Parent = Synapseopencenter
+	Attach.BackgroundColor3 = Color3.fromRGB(21, 145, 2)
+	Attach.BorderColor3 = Color3.fromRGB(36, 192, 3)
+	Attach.Position = UDim2.new(0.220454544, 0, 0.438679248, 0)
+	Attach.Size = UDim2.new(0, 247, 0, 40)
+	Attach.Font = Enum.Font.SourceSansBold
+	Attach.Text = "Attach"
+	Attach.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Attach.TextSize = 14.000
+	Attach.MouseButton1Down:connect(function()
+		Synapseopen.Visible = false
+		Synapsemain.Visible = true
+		Synapsead1.Visible = true
+	end)
+
+	Synapseopentop.Name = "Synapseopentop"
+	Synapseopentop.Parent = Synapseopen
+	Synapseopentop.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseopentop.Size = UDim2.new(0, 439, 0, 32)
+
+	Synapsetitle.Name = "Synapsetitle"
+	Synapsetitle.Parent = Synapseopentop
+	Synapsetitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsetitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsetitle.Position = UDim2.new(0.025056947, 0, 0, 0)
+	Synapsetitle.Size = UDim2.new(0, 119, 0, 32)
+	Synapsetitle.Font = Enum.Font.SourceSansBold
+	Synapsetitle.Text = "Synapse X"
+	Synapsetitle.TextColor3 = Color3.fromRGB(244, 98, 7)
+	Synapsetitle.TextSize = 16.000
+	Synapsetitle.TextXAlignment = Enum.TextXAlignment.Left
+
+	Closeopen.Name = "Closeopen"
+	Closeopen.Parent = Synapseopentop
+	Closeopen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Closeopen.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Closeopen.Position = UDim2.new(0.927107036, 0, 0, 0)
+	Closeopen.Size = UDim2.new(0, 32, 0, 32)
+	Closeopen.Font = Enum.Font.GothamBlack
+	Closeopen.Text = "X"
+	Closeopen.TextColor3 = Color3.fromRGB(76, 78, 76)
+	Closeopen.TextSize = 14.000
+	Closeopen.MouseButton1Down:connect(function()
+		print "You're not allowed to do that right now."
+	end)
+
+	Synapsemain.Name = "Synapsemain"
+	Synapsemain.Parent = SynapseX
+	Synapsemain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsemain.Position = UDim2.new(0.315227926, 0, 0.249185666, 0)
+	Synapsemain.Size = UDim2.new(0, 385, 0, 26)
+	Synapsemain.Visible = false
+	Synapsemain.Active = true
+	Synapsemain.Draggable = true
+
+	Synapsemaintop.Name = "Synapsemaintop"
+	Synapsemaintop.Parent = Synapsemain
+	Synapsemaintop.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsemaintop.Size = UDim2.new(0, 428, 0, 25)
+
+	Synapsemaintitle.Name = "Synapsemaintitle"
+	Synapsemaintitle.Parent = Synapsemaintop
+	Synapsemaintitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsemaintitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsemaintitle.Position = UDim2.new(0.0155844158, 0, 0, 0)
+	Synapsemaintitle.Size = UDim2.new(0, 95, 0, 25)
+	Synapsemaintitle.Font = Enum.Font.SourceSansBold
+	Synapsemaintitle.Text = "Synapse X"
+	Synapsemaintitle.TextColor3 = Color3.fromRGB(253, 98, 8)
+	Synapsemaintitle.TextSize = 14.000
+	Synapsemaintitle.TextXAlignment = Enum.TextXAlignment.Left
+
+	Closemain.Name = "Closemain"
+	Closemain.Parent = Synapsemaintop
+	Closemain.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+	Closemain.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Closemain.Position = UDim2.new(0.923892438, 0, 0.0399999991, 0)
+	Closemain.Size = UDim2.new(0, 32, 0, 25)
+	Closemain.Font = Enum.Font.SourceSans
+	Closemain.Text = "X"
+	Closemain.TextColor3 = Color3.fromRGB(115, 115, 115)
+	Closemain.TextSize = 14.000
+	Closemain.MouseButton1Down:connect(function()
+		Synapsead2.Visible = true
+	end)
+
+	Synapsemaincenter.Name = "Synapsemaincenter"
+	Synapsemaincenter.Parent = Synapsemain
+	Synapsemaincenter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsemaincenter.Position = UDim2.new(0, 0, 1, 0)
+	Synapsemaincenter.Size = UDim2.new(0, 428, 0, 237)
+
+	Synapsebuttons.Name = "Synapsebuttons"
+	Synapsebuttons.Parent = Synapsemaincenter
+	Synapsebuttons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsebuttons.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsebuttons.BorderSizePixel = 2
+	Synapsebuttons.Size = UDim2.new(0, 134, 0, 31)
+	Synapsebuttons.Font = Enum.Font.SourceSans
+	Synapsebuttons.Text = "Buttons"
+	Synapsebuttons.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsebuttons.TextSize = 16.000
+	Synapsebuttons.MouseButton1Down:connect(function()
+		Synapsemaincenter.Visible = true
+		Synapsemainexecutor.Visible = false
+	end)
+
+	Synapselua.Name = "Synapselua"
+	Synapselua.Parent = Synapsemaincenter
+	Synapselua.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapselua.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Synapselua.BorderSizePixel = 2
+	Synapselua.Position = UDim2.new(0.647196233, 0, 0, 0)
+	Synapselua.Size = UDim2.new(0, 151, 0, 31)
+	Synapselua.Font = Enum.Font.SourceSans
+	Synapselua.Text = "Lua"
+	Synapselua.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapselua.TextSize = 16.000
+	Synapselua.MouseButton1Down:connect(function()
+		Synapsemainexecutor.Visible = true
+		Synapsemaincenter.Visible = true
+		Synapsead1.Visible = true
+	end)
+
+	Synapsecommands.Name = "Synapsecommands"
+	Synapsecommands.Parent = Synapsemaincenter
+	Synapsecommands.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsecommands.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsecommands.BorderSizePixel = 2
+	Synapsecommands.Position = UDim2.new(0.31775701, 0, 0, 0)
+	Synapsecommands.Size = UDim2.new(0, 141, 0, 31)
+	Synapsecommands.Font = Enum.Font.SourceSans
+	Synapsecommands.Text = "Commands"
+	Synapsecommands.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsecommands.TextSize = 16.000
+	Synapsecommands.MouseButton1Down:connect(function()
+		print "Kiss me."
+		Synapsead5.Visible = true
+		wait(20)
+		Synapsead5.Visible = false
+	end)
+
+	Synapsecommonbutton.Name = "Synapsecommonbutton"
+	Synapsecommonbutton.Parent = Synapsemaincenter
+	Synapsecommonbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsecommonbutton.BorderColor3 = Color3.fromRGB(246, 248, 255)
+	Synapsecommonbutton.Position = UDim2.new(0.247663558, 0, 0.15611814, 0)
+	Synapsecommonbutton.Size = UDim2.new(0, 200, 0, 33)
+	Synapsecommonbutton.Font = Enum.Font.GothamBold
+	Synapsecommonbutton.Text = "Common"
+	Synapsecommonbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsecommonbutton.TextSize = 20.000
+
+	Synapseadmin.Name = "Synapseadmin"
+	Synapseadmin.Parent = Synapsemaincenter
+	Synapseadmin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseadmin.Position = UDim2.new(0.647196293, 0, 0.827004194, 0)
+	Synapseadmin.Size = UDim2.new(0, 100, 0, 30)
+	Synapseadmin.Font = Enum.Font.SourceSansLight
+	Synapseadmin.Text = "become rblx admin"
+	Synapseadmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadmin.TextSize = 12.000
+	Synapseadmin.MouseButton1Down:connect(function()
+		Synapsead4.Visible = true
+		Synapsemain.Visible = false
+		Synapsemainexecutor.Visible = false
+	end)
+
+	Synapseinfjump.Name = "Synapseinfjump"
+	Synapseinfjump.Parent = Synapsemaincenter
+	Synapseinfjump.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseinfjump.Position = UDim2.new(0.380841136, 0, 0.295358658, 0)
+	Synapseinfjump.Size = UDim2.new(0, 100, 0, 30)
+	Synapseinfjump.Font = Enum.Font.SourceSans
+	Synapseinfjump.Text = "Infinite Jump"
+	Synapseinfjump.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseinfjump.TextSize = 14.000
+	Synapseinfjump.MouseButton1Down:connect(function()
+		local Ij = true
+		game:GetService("UserInputService").JumpRequest:connect(function()
+			if Ij then
+				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			end
+		end)
+		Synapsead2.Visible = true
+	end)
+
+	Synapsefly.Name = "Synapsefly"
+	Synapsefly.Parent = Synapsemaincenter
+	Synapsefly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsefly.Position = UDim2.new(0.383177608, 0, 0.47679323, 0)
+	Synapsefly.Size = UDim2.new(0, 100, 0, 30)
+	Synapsefly.Font = Enum.Font.Gotham
+	Synapsefly.Text = "Fly (Wirkong!)"
+	Synapsefly.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsefly.TextSize = 10.000
+	Synapsefly.MouseButton1Down:connect(function()
+		Synapsead5.Visible = true
+		wait(20)
+		Synapsead5.Visible = false
+		loadstring(game:HttpGet(('https://pastebin.com/3biW92gZ'),true))()
+		Synapsead3.Visible = true
+	end)
+
+	Useless.Name = "Useless"
+	Useless.Parent = Synapsemaincenter
+
+	Synapsebroken1.Name = "Synapsebroken1"
+	Synapsebroken1.Parent = Useless
+	Synapsebroken1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsebroken1.Position = UDim2.new(0.119158879, 0, 0.295358658, 0)
+	Synapsebroken1.Size = UDim2.new(0, 100, 0, 30)
+	Synapsebroken1.Font = Enum.Font.SourceSansLight
+	Synapsebroken1.Text = "ctrl click tp"
+	Synapsebroken1.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsebroken1.TextSize = 14.000
+
+	Synapsebroken2.Name = "Synapsebroken2"
+	Synapsebroken2.Parent = Useless
+	Synapsebroken2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsebroken2.Position = UDim2.new(0.647196233, 0, 0.295358658, 0)
+	Synapsebroken2.Size = UDim2.new(0, 100, 0, 30)
+	Synapsebroken2.Font = Enum.Font.RobotoMono
+	Synapsebroken2.Text = "ESP"
+	Synapsebroken2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsebroken2.TextSize = 14.000
+
+	Synapsebroken3.Name = "Synapsebroken3"
+	Synapsebroken3.Parent = Useless
+	Synapsebroken3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsebroken3.Position = UDim2.new(0.119158879, 0, 0.476793259, 0)
+	Synapsebroken3.Size = UDim2.new(0, 100, 0, 30)
+	Synapsebroken3.Font = Enum.Font.SourceSans
+	Synapsebroken3.Text = "Aim bot (OP FE)"
+	Synapsebroken3.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsebroken3.TextSize = 14.000
+
+	Synapsebroken4.Name = "Synapsebroken4"
+	Synapsebroken4.Parent = Useless
+	Synapsebroken4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsebroken4.Position = UDim2.new(0.647196233, 0, 0.476793259, 0)
+	Synapsebroken4.Size = UDim2.new(0, 100, 0, 30)
+	Synapsebroken4.Font = Enum.Font.SourceSansLight
+	Synapsebroken4.Text = "become god mode"
+	Synapsebroken4.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsebroken4.TextSize = 14.000
+
+	Synapsebrokennoclip6.Name = "Synapsebrokennoclip6"
+	Synapsebrokennoclip6.Parent = Useless
+	Synapsebrokennoclip6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsebrokennoclip6.Position = UDim2.new(0.119158879, 0, 0.654008448, 0)
+	Synapsebrokennoclip6.Size = UDim2.new(0, 100, 0, 30)
+	Synapsebrokennoclip6.Font = Enum.Font.SourceSansBold
+	Synapsebrokennoclip6.Text = "noc   lip"
+	Synapsebrokennoclip6.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsebrokennoclip6.TextSize = 14.000
+	Synapsebrokennoclip6.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,100000,0)
+		wait(4)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,-100000,0)
+		wait()
+		Synapsead3.Visible = true
+	end)
+
+	Synapsebroken5.Name = "Synapsebroken5"
+	Synapsebroken5.Parent = Useless
+	Synapsebroken5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsebroken5.Position = UDim2.new(0.380841136, 0, 0.654008448, 0)
+	Synapsebroken5.Size = UDim2.new(0, 100, 0, 30)
+	Synapsebroken5.Font = Enum.Font.SourceSansBold
+	Synapsebroken5.Text = "Flesh i mean flashlight"
+	Synapsebroken5.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsebroken5.TextSize = 10.000
+
+	Synapsebroken7.Name = "Synapsebroken7"
+	Synapsebroken7.Parent = Useless
+	Synapsebroken7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsebroken7.Position = UDim2.new(0.647196293, 0, 0.654008448, 0)
+	Synapsebroken7.Size = UDim2.new(0, 100, 0, 30)
+	Synapsebroken7.Font = Enum.Font.SourceSansBold
+	Synapsebroken7.Text = "no legz"
+	Synapsebroken7.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsebroken7.TextSize = 14.000
+
+	Synapsebroken8.Name = "Synapsebroken8"
+	Synapsebroken8.Parent = Useless
+	Synapsebroken8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsebroken8.Position = UDim2.new(0.119158894, 0, 0.827004194, 0)
+	Synapsebroken8.Size = UDim2.new(0, 100, 0, 30)
+	Synapsebroken8.Font = Enum.Font.SourceSansBold
+	Synapsebroken8.Text = "float"
+	Synapsebroken8.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsebroken8.TextSize = 14.000
+
+	Synapsebroken9.Name = "Synapsebroken9"
+	Synapsebroken9.Parent = Useless
+	Synapsebroken9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsebroken9.Position = UDim2.new(0.383177578, 0, 0.827004194, 0)
+	Synapsebroken9.Size = UDim2.new(0, 100, 0, 30)
+	Synapsebroken9.Font = Enum.Font.SourceSansLight
+	Synapsebroken9.Text = "chat trololol"
+	Synapsebroken9.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsebroken9.TextSize = 14.000
+
+	Synapsemainbottom.Name = "Synapsemainbottom"
+	Synapsemainbottom.Parent = Synapsemain
+	Synapsemainbottom.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Synapsemainbottom.Position = UDim2.new(0, 0, 10.1153851, 0)
+	Synapsemainbottom.Size = UDim2.new(0, 427, 0, 19)
+
+	Synapsemainexecutor.Name = "Synapsemainexecutor"
+	Synapsemainexecutor.Parent = Synapsemaincenter
+	Synapsemainexecutor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsemainexecutor.Position = UDim2.new(-0.00019261241, 0, 0.126829684, 0)
+	Synapsemainexecutor.Size = UDim2.new(0, 428, 0, 206)
+	Synapsemainexecutor.Visible = false
+	Synapsemainexecutor.Active = true
+
+	Executor.Name = "Executor"
+	Executor.Parent = Synapsemainexecutor
+	Executor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Executor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Executor.Position = UDim2.new(0.00467289705, 0, 1.49011612e-08, 0)
+	Executor.Size = UDim2.new(0, 427, 0, 155)
+	Executor.Font = Enum.Font.SourceSans
+	Executor.Text = "--scripts that will do anything will NOT work                                                                                                                 -- currently only supporting print :)"
+	Executor.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Executor.TextSize = 13.000
+	Executor.TextWrapped = true
+	Executor.TextXAlignment = Enum.TextXAlignment.Left
+	Executor.TextYAlignment = Enum.TextYAlignment.Top
+
+	Execute.Name = "Execute"
+	Execute.Parent = Synapsemainexecutor
+	Execute.BackgroundColor3 = Color3.fromRGB(25, 196, 57)
+	Execute.BorderColor3 = Color3.fromRGB(50, 54, 0)
+	Execute.BorderSizePixel = 2
+	Execute.Position = UDim2.new(0.0443925224, 0, 0.776699007, 0)
+	Execute.Size = UDim2.new(0, 180, 0, 40)
+	Execute.Font = Enum.Font.SourceSansBold
+	Execute.Text = "Execute"
+	Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Execute.TextSize = 16.000
+	Execute.MouseButton1Down:connect(function()
+		loadstring(Executor.Text)()
+		wait()
+		Synapsead1.Visible = true
+		Synapsead3.Visible = true
+		Synapsead5.Visible = true
+		wait(20)
+		Synapsead5.Visible = false
+	end)
+
+	Openfile.Name = "Openfile"
+	Openfile.Parent = Synapsemainexecutor
+	Openfile.BackgroundColor3 = Color3.fromRGB(28, 195, 47)
+	Openfile.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Openfile.BorderSizePixel = 2
+	Openfile.Position = UDim2.new(0.514018714, 0, 0.776699007, 0)
+	Openfile.Size = UDim2.new(0, 175, 0, 40)
+	Openfile.Font = Enum.Font.SourceSansBold
+	Openfile.Text = "Open File"
+	Openfile.TextColor3 = Color3.fromRGB(240, 246, 255)
+	Openfile.TextSize = 14.000
+
+	Synapsead1.Name = "Synapsead1"
+	Synapsead1.Parent = SynapseX
+	Synapsead1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsead1.Position = UDim2.new(0.0737148374, 0, 0.1237785, 0)
+	Synapsead1.Size = UDim2.new(0, 236, 0, 210)
+	Synapsead1.Visible = false
+	Synapsead1.Active = true
+
+	Synapseadtext1.Name = "Synapseadtext1"
+	Synapseadtext1.Parent = Synapsead1
+	Synapseadtext1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadtext1.Position = UDim2.new(0.0466101691, 0, 0.761904776, 0)
+	Synapseadtext1.Size = UDim2.new(0, 217, 0, 50)
+	Synapseadtext1.Font = Enum.Font.Highway
+	Synapseadtext1.Text = "HOT single aesthetics in your area ;)))"
+	Synapseadtext1.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseadtext1.TextSize = 20.000
+	Synapseadtext1.TextWrapped = true
+
+	Synapseadimage1.Name = "Synapseadimage1"
+	Synapseadimage1.Parent = Synapsead1
+	Synapseadimage1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadimage1.Position = UDim2.new(0.0466101691, 0, 0.0333333351, 0)
+	Synapseadimage1.Size = UDim2.new(0, 217, 0, 146)
+	Synapseadimage1.Image = "rbxassetid://6117434942"
+
+	Synapseadclose1.Name = "Synapseadclose1"
+	Synapseadclose1.Parent = Synapsead1
+	Synapseadclose1.BackgroundColor3 = Color3.fromRGB(252, 0, 6)
+	Synapseadclose1.Position = UDim2.new(0.881355941, 0, 0, 0)
+	Synapseadclose1.Size = UDim2.new(0, 28, 0, 27)
+	Synapseadclose1.Font = Enum.Font.SourceSans
+	Synapseadclose1.Text = "X"
+	Synapseadclose1.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseadclose1.TextSize = 14.000
+	Synapseadclose1.MouseButton1Down:connect(function()
+		wait(2)
+		Synapsead1.Visible = false
+		wait(30)
+		Synapsead1.Visible = true
+	end)
+
+	Synapsead2.Name = "Synapsead2"
+	Synapsead2.Parent = SynapseX
+	Synapsead2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsead2.Position = UDim2.new(0.630455852, 0, 0.117263846, 0)
+	Synapsead2.Size = UDim2.new(0, 309, 0, 297)
+	Synapsead2.Visible = false
+	Synapsead2.Active = true
+
+	Synapseadtext2.Name = "Synapseadtext2"
+	Synapseadtext2.Parent = Synapsead2
+	Synapseadtext2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadtext2.Position = UDim2.new(0, 0, 0.801346779, 0)
+	Synapseadtext2.Size = UDim2.new(0, 309, 0, 59)
+	Synapseadtext2.Font = Enum.Font.SourceSansSemibold
+	Synapseadtext2.Text = "Enter in y0u'r rawblrx account pasward to start CHATTING"
+	Synapseadtext2.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseadtext2.TextSize = 20.000
+	Synapseadtext2.TextWrapped = true
+
+	Synapseadclose2.Name = "Synapseadclose2"
+	Synapseadclose2.Parent = Synapsead2
+	Synapseadclose2.BackgroundColor3 = Color3.fromRGB(252, 0, 6)
+	Synapseadclose2.Position = UDim2.new(0.932038844, 0, 0, 0)
+	Synapseadclose2.Size = UDim2.new(0, 21, 0, 19)
+	Synapseadclose2.Font = Enum.Font.SourceSans
+	Synapseadclose2.Text = "X"
+	Synapseadclose2.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseadclose2.MouseButton1Down:connect(function()
+		wait(2)
+		Synapsead2.Visible = false
+		Synapsead6.Visible = true
+		wait(5)
+		Synapsead6.Visible = false
+		wait(30)
+		Synapsead2.Visible = true
+	end)
+
+	Synapseadimage2.Name = "Synapseadimage2"
+	Synapseadimage2.Parent = Synapsead2
+	Synapseadimage2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadimage2.Position = UDim2.new(0.0194174759, 0, 0, 0)
+	Synapseadimage2.Size = UDim2.new(0, 282, 0, 230)
+	Synapseadimage2.Image = "rbxassetid://5915268144"
+
+	Synapsead3.Name = "Synapsead3"
+	Synapsead3.Parent = SynapseX
+	Synapsead3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsead3.Position = UDim2.new(0.298739076, 0, 0.205211729, 0)
+	Synapsead3.Size = UDim2.new(0, 436, 0, 348)
+	Synapsead3.Visible = false
+	Synapsead3.Active = true
+
+	Synapseadtext3.Name = "Synapseadtext3"
+	Synapseadtext3.Parent = Synapsead3
+	Synapseadtext3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadtext3.Position = UDim2.new(0, 0, 0.856321812, 0)
+	Synapseadtext3.Size = UDim2.new(0, 436, 0, 50)
+	Synapseadtext3.Font = Enum.Font.SourceSans
+	Synapseadtext3.Text = "yo6r computer has V1RuZ! call +66 420 555 909 to install windoors DfEfediner!!!!"
+	Synapseadtext3.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseadtext3.TextSize = 18.000
+	Synapseadtext3.TextWrapped = true
+
+	Synapseadimage3.Name = "Synapseadimage3"
+	Synapseadimage3.Parent = Synapsead3
+	Synapseadimage3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadimage3.Position = UDim2.new(0.0160550456, 0, 0.0172413792, 0)
+	Synapseadimage3.Size = UDim2.new(0, 418, 0, 280)
+	Synapseadimage3.Image = "rbxassetid://34680495"
+
+	Synapseclose3.Name = "Synapseclose3"
+	Synapseclose3.Parent = Synapsead3
+	Synapseclose3.BackgroundColor3 = Color3.fromRGB(252, 0, 26)
+	Synapseclose3.Position = UDim2.new(0.928899109, 0, 0, 0)
+	Synapseclose3.Size = UDim2.new(0, 31, 0, 28)
+	Synapseclose3.Font = Enum.Font.SourceSans
+	Synapseclose3.Text = "X"
+	Synapseclose3.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseclose3.TextSize = 14.000
+	Synapseclose3.MouseButton1Down:connect(function()
+		wait(2)
+		Synapsead3.Visible = false
+		Synapsead6.Visible = true
+		wait(5)
+		Synapsead6.Visible = false
+		wait(30)
+		Synapsead3.Visible = true
+	end)
+
+	Synapsead4.Name = "Synapsead4"
+	Synapsead4.Parent = SynapseX
+	Synapsead4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsead4.Size = UDim2.new(0, 1500, 0, 900)
+	Synapsead4.Visible = false
+	Synapsead4.Active = true
+
+	Synapseimage4.Name = "Synapseimage4"
+	Synapseimage4.Parent = Synapsead4
+	Synapseimage4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseimage4.Size = UDim2.new(0, 1031, 0, 606)
+	Synapseimage4.Image = "rbxassetid://5599926838"
+
+	Synapsead5.Name = "Synapsead5"
+	Synapsead5.Parent = SynapseX
+	Synapsead5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsead5.Position = UDim2.new(0.712900102, 0, 0.636807799, 0)
+	Synapsead5.Size = UDim2.new(0, 288, 0, 209)
+	Synapsead5.Visible = false
+	Synapsead5.Active = true
+
+	Synapseadtext5.Name = "Synapseadtext5"
+	Synapseadtext5.Parent = Synapsead5
+	Synapseadtext5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadtext5.Position = UDim2.new(0, 0, 0.784689009, 0)
+	Synapseadtext5.Size = UDim2.new(0, 288, 0, 45)
+	Synapseadtext5.Font = Enum.Font.Roboto
+	Synapseadtext5.Text = "You're compUteR hAz a ViRus!!!!. Install our malworare to ramove or caLl indian man"
+	Synapseadtext5.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseadtext5.TextSize = 14.000
+	Synapseadtext5.TextWrapped = true
+
+	Synapseadtext5dash1.Name = "Synapseadtext5dash1"
+	Synapseadtext5dash1.Parent = Synapsead5
+	Synapseadtext5dash1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadtext5dash1.Size = UDim2.new(0, 288, 0, 20)
+	Synapseadtext5dash1.Font = Enum.Font.SourceSans
+	Synapseadtext5dash1.Text = "Windoes Doefornder"
+	Synapseadtext5dash1.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseadtext5dash1.TextSize = 14.000
+
+	Synapseadimage5.Name = "Synapseadimage5"
+	Synapseadimage5.Parent = Synapsead5
+	Synapseadimage5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadimage5.Position = UDim2.new(0, 0, 0.095693782, 0)
+	Synapseadimage5.Size = UDim2.new(0, 159, 0, 144)
+	Synapseadimage5.Image = "rbxassetid://59120801"
+
+	Synapseadimage5dash1.Name = "Synapseadimage5dash1"
+	Synapseadimage5dash1.Parent = Synapsead5
+	Synapseadimage5dash1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadimage5dash1.Position = UDim2.new(0.552083313, 0, 0.095693782, 0)
+	Synapseadimage5dash1.Size = UDim2.new(0, 129, 0, 144)
+	Synapseadimage5dash1.Image = "rbxassetid://651221972"
+
+	Synapsead6.Name = "Synapsead6"
+	Synapsead6.Parent = SynapseX
+	Synapsead6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsead6.Position = UDim2.new(0.0572259948, 0, 0.0390879475, 0)
+	Synapsead6.Size = UDim2.new(0, 913, 0, 549)
+	Synapsead6.Visible = false
+	Synapsead6.Active = true
+
+	Synapseadtext6.Name = "Synapseadtext6"
+	Synapseadtext6.Parent = Synapsead6
+	Synapseadtext6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadtext6.Size = UDim2.new(0, 913, 0, 302)
+	Synapseadtext6.Font = Enum.Font.SourceSansBold
+	Synapseadtext6.Text = "FREE ROBUX @https://www.youtube.com/watch?v=xvFZjo5PgG0"
+	Synapseadtext6.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseadtext6.TextSize = 36.000
+
+	Synapseadimage6.Name = "Synapseadimage6"
+	Synapseadimage6.Parent = Synapsead6
+	Synapseadimage6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadimage6.Position = UDim2.new(0, 0, 0.550091088, 0)
+	Synapseadimage6.Size = UDim2.new(0, 913, 0, 247)
+	Synapseadimage6.Image = "rbxassetid://684637914"
+
+	Synapsead7.Name = "Synapsead7"
+	Synapsead7.Parent = SynapseX
+	Synapsead7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapsead7.Position = UDim2.new(0.0378273539, 0, 0.602605879, 0)
+	Synapsead7.Size = UDim2.new(0, 353, 0, 217)
+	Synapsead7.Visible = false
+	Synapsead7.Active = true
+	wait(5)
+	Synapsead7.Visible = false
+	wait(7.5)
+	Synapsead7.Visible = true
+
+	Synapseadtext7.Name = "Synapseadtext7"
+	Synapseadtext7.Parent = Synapsead7
+	Synapseadtext7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadtext7.Position = UDim2.new(0, 0, 0.732718945, 0)
+	Synapseadtext7.Size = UDim2.new(0, 353, 0, 58)
+	Synapseadtext7.Font = Enum.Font.Roboto
+	Synapseadtext7.Text = "ROBLOX HQ drAma!!! Find out what BUILDERMAN did to Jane Doe ;)))))) :flushed: :eyes:"
+	Synapseadtext7.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Synapseadtext7.TextSize = 16.000
+	Synapseadtext7.TextWrapped = true
+
+	Synapseadimage7.Name = "Synapseadimage7"
+	Synapseadimage7.Parent = Synapsead7
+	Synapseadimage7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Synapseadimage7.Size = UDim2.new(0, 353, 0, 159)
+	Synapseadimage7.Image = "rbxassetid://37831226"
+end)
