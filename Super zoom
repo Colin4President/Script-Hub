@@ -1,0 +1,3 @@
+plr.CameraMaxZoomDistance = 99999999999
+plr.CameraMinZoomDistance = 0
+end)
