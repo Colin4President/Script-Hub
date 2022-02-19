@@ -11551,12 +11551,12 @@ game:GetService("ContextActionService"):BindAction("Toggle", function(action, st
 		Controller = GravityController.new(PLAYERS.LocalPlayer)
 		Controller.GetGravityUp = GetGravityUp
 	end
-end, false, Enum.KeyCode.Z)
+end, false, Enum.KeyCode.Q)
 print("end")
 
 game.StarterGui:SetCore("SendNotification", {
 	Title = "KATER ";
-	Text = "Toggle (E)";
+	Text = "Toggle (Q)";
 	Duration = 12;
     Button1 = "OK";
 })
