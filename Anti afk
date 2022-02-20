@@ -1,4 +1,4 @@
-local Notification = loadstring(game:HttpGet("https://api.irisapp.ca/Scripts/IrisBetterNotifications.lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/KATERGaming/Massage-/main/Libery"))()
 getgenv().IrisAd = true;
 
 Notification.Notify("Kater GUI", "NO TIMEOUT", "http://www.roblox.com/asset/?id=8059768488", {
