@@ -2,7 +2,7 @@ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 getgenv().IrisAd = true;
 
 Notification.Notify("Kater Hub", "Anti AFK [ONLINE]", "http://www.roblox.com/asset/?id=8059768488", {
-    Duration = 8,
+    Duration = 4,
 
     TitleSettings = {
         TextXAlignment = Enum.TextXAlignment.Center,
