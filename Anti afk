@@ -1,7 +1,7 @@
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/KATERGaming/Massage-/main/Libery"))()
 getgenv().IrisAd = true;
 
-Notification.Notify("Kater Hub", "Anti AFk [ONLINE]", "http://www.roblox.com/asset/?id=8059768488", {
+Notification.Notify("Kater Hub", "Anti AFK [ONLINE]", "http://www.roblox.com/asset/?id=8059768488", {
     Duration = 8,
 
     TitleSettings = {
