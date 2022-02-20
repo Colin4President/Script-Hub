@@ -609,3 +609,10 @@ end
 end
 end
 end)
+
+print("-----------")
+print("Controlls")
+print("sit: Y / Z")
+print("Lay: X")
+print("Sad?: C")
+print("-----------")
