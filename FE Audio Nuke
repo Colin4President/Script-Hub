@@ -1,3 +1,5 @@
+while true do
+    wait(2)
 --// Doesn't work if RespectFilteringEnabled is enabled
 print(game:GetService("SoundService").RespectFilteringEnabled)
 
@@ -6,4 +8,5 @@ for _, sound in next, workspace:GetDescendants() do
    if sound:IsA("Sound") then
        sound:Play()
    end
+end
 end
