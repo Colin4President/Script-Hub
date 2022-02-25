@@ -20,7 +20,7 @@ Notification.Notify("Kater Hub", "FE Audio Nuke = ONLINE", "http://www.roblox.co
 
 
 while true do
-    wait(1)
+    wait(0.5)
 --// Doesn't work if RespectFilteringEnabled is enabled
 print(game:GetService("SoundService").RespectFilteringEnabled)
 
