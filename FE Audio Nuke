@@ -1,5 +1,5 @@
 while true do
-    wait(2)
+    wait(1)
 --// Doesn't work if RespectFilteringEnabled is enabled
 print(game:GetService("SoundService").RespectFilteringEnabled)
 
@@ -10,3 +10,4 @@ for _, sound in next, workspace:GetDescendants() do
    end
 end
 end
+
