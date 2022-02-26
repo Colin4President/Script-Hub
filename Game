@@ -1,1 +1,11 @@
-print("TEST")
+if game.PlaceId == 6433862660 then
+
+print("Kater Hub is Best!")
+
+local args = {
+    [1] = "Kater Hub Best!",
+    [2] = "All",
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end
