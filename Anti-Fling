@@ -33,7 +33,7 @@ local function PlayerAdded(Player)
            if PrimaryPart.AssemblyAngularVelocity.Magnitude > 50 or PrimaryPart.AssemblyLinearVelocity.Magnitude > 100 then
                if Detected == false then
                    game.StarterGui:SetCore("ChatMakeSystemMessage", {
-                       Text = "[Kater Hub] Exploit detected, Player: " .. tostring(Player);
+                       Text = "[Kater Hub]: Exploit detected, Player: " .. tostring(Player);
                        Color = Color3.fromRGB(255, 200, 0);
                    })
                end
