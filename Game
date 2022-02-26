@@ -3,7 +3,7 @@ if game.PlaceId == 6433862660 then
 print("Kater Hub is Best!")
 
 local args = {
-    [1] = "Kater Hub Best!",
+    [1] = "Katers script is da Best!",
     [2] = "All",
 }
 
