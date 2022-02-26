@@ -1,0 +1,24 @@
+
+
+local Player = game.Players.LocalPlayer
+local MuteTime = 15
+
+local ChatTime = 0 -- Dont change that
+Player.Chatted:connect(function(m)
+	if ChatTime < 1 then
+		if #m > 30 then
+			MuteTime = MuteTime * 5
+		end
+		game.ReplicatedStorage.AutoWarnEv:FireServer("Warning: Do not spam the chat. Your chat has been timed out for "..MuteTime.." Seconds")
+		game:GetService("StarterGui"):SetCoreGuiEnabled(3,false)
+	
+		wait(MuteTime)
+		game:GetService("StarterGui"):SetCoreGuiEnabled(3,true)
+		MuteTime = MuteTime * 2
+	end
+
+	ChatTime = 0
+end)
+while wait(0.1) do
+	ChatTime = ChatTime +0.1
+end
