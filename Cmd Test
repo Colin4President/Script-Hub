@@ -1,0 +1,5 @@
+game:service'Players'.LocalPlayer.Chatted:connect(function(msg)
+   if string.sub(string.lower(msg), 1, 5) == ":kill" then
+       game:service'Players'.LocalPlayer.Character:BreakJoints()
+   end
+end)
