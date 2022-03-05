@@ -1,8 +1,6 @@
-while true do
-	local args = {
-    [1] = "現在加入我",
-    [2] = "All",
-  }
+local args = {
+[1] = "Chinese like Dad",
+[2] = "All",
+}
 
-  game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-end
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
