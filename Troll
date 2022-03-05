@@ -1,1 +1,8 @@
-宿醉中心
+while true do
+	local args = {
+    [1] = "現在加入我",
+    [2] = "All",
+  }
+
+  game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end
