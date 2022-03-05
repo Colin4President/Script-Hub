@@ -1,0 +1,6 @@
+local args = {
+[1] = "Chinese like Dad",
+[2] = "All",
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
