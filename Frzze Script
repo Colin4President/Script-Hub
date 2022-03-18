@@ -1,5 +1,5 @@
 --RIGHT control, not left
-_G.key = Enum.KeyCode.LeftControl
+_G.key = Enum.KeyCode.V
  
 loadstring(game:HttpGet("https://raw.githubusercontent.com/KATERGaming/Script-Hub/main/Part%20of%20Frezze", true))()
  
