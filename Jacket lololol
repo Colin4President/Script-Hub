@@ -1,11 +1,11 @@
-while true do
-local number_1 = 2;
-local table_1 = {
-	[1] = 1,
-	[2] = 1,
-	[3] = 19
-};
-local Target = game:GetService("ReplicatedStorage").Project.RemoteEvent.ControlMessageEvent;
-Target:FireServer(number_1, table_1);
-    wait()
+--  ((Packed with care by sysGhost/BiKode))
+--  Remember to use R15 with Rthro avatar(head) and scale ur head at max
+
+for i,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetChildren()) do
+   if string.find(v.Name,"Scale") and v.Name ~= "HeadScale" then
+       repeat wait(HeadGrowSpeed) until game.Players.LocalPlayer.Character.Head:FindFirstChild("OriginalSize")
+       game.Players.LocalPlayer.Character.Head.OriginalSize:Destroy()
+       v:Destroy()
+       game.Players.LocalPlayer.Character.Head:WaitForChild("OriginalSize")
+   end
 end
