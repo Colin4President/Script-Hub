@@ -1,0 +1,11 @@
+while true do
+local number_1 = 2;
+local table_1 = {
+	[1] = 1,
+	[2] = 1,
+	[3] = 19
+};
+local Target = game:GetService("ReplicatedStorage").Project.RemoteEvent.ControlMessageEvent;
+Target:FireServer(number_1, table_1);
+    wait()
+end
