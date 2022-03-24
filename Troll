@@ -50,5 +50,5 @@ local args = {
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
-game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[Kater Hub] Looping!", Color = Color3.fromRGB( 0,0,17 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[Kater Hub] Looping!", Color = Color3.fromRGB( 1,1,17 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 
