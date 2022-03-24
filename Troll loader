@@ -1,4 +1,4 @@
 while true do
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/KATERGaming/Script-Hub/main/massage"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KATERGaming/Script-Hub/main/Troll"))()
 	wait(0.2)
 end
