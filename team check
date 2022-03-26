@@ -1,0 +1,5 @@
+for i,v in pairs(game.Players:GetPlayers()) do
+   if v.Team ~= game.Players.LocalPlayer.Team then
+       print(v.Name)
+   end
+   end
