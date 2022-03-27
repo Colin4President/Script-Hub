@@ -1,54 +1,22 @@
-local args = {
-[1] = "Chinese like Dad",
-[2] = "All",
-}
+game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[Kater Hub] random massages", Color = Color3.fromRGB( 1,1,17 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+local HttpService = game:GetService("HttpService")
+local Players = game:GetService("Players")
 
-wait(3)
+_G.Owner = "ChangeThis"
 
-local args = {
-[1] = "We all using JJsynapse",
-[2] = "All",
-}
+function getChat(message,plrname)
 
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+   local Split = message:gsub(" ", "+") -- This takes spaces within the person's message and turns it into for ex: Hi+How+Are+You... to ensure that there are no errors and to also make the URL work
+   
+   local Response = game:HttpGet("https://api.affiliateplus.xyz/api/chatbot?message=" .. Split .. "&botname=" .. plrname .. "&ownername=" .. _G.Owner .. "&user=1")
+   local Data = HttpService:JSONDecode(Response)
+   wait(1)
+   game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(Data.message, "All")
+end
 
-wait(3)
-
-local args = {
-[1] = "eww",
-[2] = "All",
-}
-
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-wait(3)
-
-local args = {
-[1] = "Slender is ugly.",
-[2] = "All",
-}
-
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-wait(3)
-
-local args = {
-[1] = "get a live!",
-[2] = "All",
-}
-
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-wait(3)
-
-local args = {
-[1] = "Pls dont ban me :((",
-[2] = "All",
-}
-
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[Kater Hub] Looping!", Color = Color3.fromRGB( 1,1,17 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
-
+Players.PlayerChatted:Connect(function(type, plr, message)
+   if plr.Name ~= Players.LocalPlayer.Name then
+       getChat(message, plr.Name)
+   end
+end)
