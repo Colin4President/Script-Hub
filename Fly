@@ -33,7 +33,7 @@ function sFLY()
 	local SPEED = 0
 
 	local function FLY()
-		game.StarterGui:SetCore("SendNotification", {Title="Fly Activated"; Text="WeAreDevs.net"; Duration=1;})
+		game.StarterGui:SetCore("SendNotification", {Title="Fly Activated"; Text="Kater Hub"; Duration=1;})
 		_G.WRDFLY = true
 		local BG = Instance.new('BodyGyro')
 		local BV = Instance.new('BodyVelocity')
@@ -109,7 +109,7 @@ function sFLY()
 end
 
 function NOFLY()
-	game.StarterGui:SetCore("SendNotification", {Title="Fly Deactivated"; Text="WeAreDevs.net"; Duration=1;})
+	game.StarterGui:SetCore("SendNotification", {Title="Fly Deactivated"; Text="Kater Hub"; Duration=1;})
 	_G.WRDFLY = false
 	if flyKeyDown or flyKeyUp then flyKeyDown:Disconnect() flyKeyUp:Disconnect() end
 	if Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid') then
