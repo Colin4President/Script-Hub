@@ -12,7 +12,7 @@ local data = {
    ["embeds"] = {
        {
            ["title"] = "**Someone Executed Your Script!**",
-           ["description"] = .."txt" .. game.Players.LocalPlayer.Name.." | Exploit: **"..webhookcheck.."**",
+           ["description"] = "txt" .. game.Players.LocalPlayer.Name.." | Exploit: **"..webhookcheck.."**",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
