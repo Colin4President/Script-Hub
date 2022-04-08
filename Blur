@@ -1,0 +1,17 @@
+-- WHEN PLAYER LOADS --
+
+function player_LOAD  ()
+	local blur = Instance.new('BlurEffect', game.Lighting)
+	blur.Size = 100
+	
+	local info =  game.Players.LocalPlayer.PlayerGui.Main.Using.Button
+	local Main1 = game.Players.LocalPlayer.PlayerGui.Main
+
+-- STATING WHAT HAPPENS WHEN YOU CLICK INFO --
+
+	info.MouseButton1Click:Connect(function()
+	wait(0.01)
+	blur:Destroy() -- DESTORYS WHICH DOESNT WORK 
+end)
+end
+player_LOAD() -- END LOADING --
