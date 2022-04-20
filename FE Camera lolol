@@ -1,0 +1,99 @@
+--[[
+    FE Camera by quirky anime boy#7003
+    If you have BigCamera set to true: https://www.roblox.com/catalog/4932749347/RoPro-XL (80 robux)
+    If you have BigCamera set to false: https://www.roblox.com/catalog/6782305429/Vintage-Film-Camera (50 robux)
+--]]
+
+local BigCamera = false -- true for Ropro, false for vintage
+
+local bigcamoffset = Vector3.new(0,0,0) -- rotation of the cameras, change to -90,0,0 for "portrait mode"
+local smallcamoffset = Vector3.new(30,0,0) -- play around with this value if the camera is angled too high/low
+local camtransparency = 1 -- 1 invisible - 0 opaque
+
+
+
+
+local plr = game.Players.LocalPlayer
+local char = game.Players.LocalPlayer.Character
+local ct = {}
+local te = table.insert
+local hatname = (BigCamera and "RoProBigAccessory") or "VintageFilmCameraAccessory"
+local hatid = (BigCamera and "4932749347") or "6782305429"
+local camhat = char:FindFirstChild(hatname)
+local camera = workspace.Camera
+
+function align(part, parent, p, r)
+    local att1 = Instance.new("Attachment",part)
+    local alp = Instance.new("AlignPosition",part)
+    local alo = Instance.new("AlignOrientation",part)
+    local att2 = Instance.new("Attachment",parent)
+    att1.Name = part.Name
+    att2.Name = part.Name
+    alp.Attachment0 = att1
+    alo.Attachment0 = att1
+    alp.Attachment1 = parent[part.Name]
+    alo.Attachment1 = parent[part.Name]
+    att2.Position = p or Vector3.new()
+    att1.Orientation = r or Vector3.new()
+    alp.MaxForce = 999999999
+    alp.MaxVelocity = math.huge
+    alp.ReactionForceEnabled = false
+    alp.Responsiveness = math.huge
+    alo.Responsiveness = math.huge
+    alp.RigidityEnabled = false
+    alo.MaxTorque = 999999999
+    part.Massless = true
+end
+
+function notify(title,text,duration)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = title; 
+        Text = text; 
+        Duration = duration or 5;
+    })
+end
+
+char.Humanoid.Died:Connect(function()
+    for i,v in pairs(ct) do
+        v:Disconnect()
+    end
+end)
+
+if camhat == nil then -- if youre in Just Grass this will give you the hat for free (https://www.roblox.com/games/5100950559)
+    if game.PlaceId == 5100950559 then
+        game.Players:Chat("-gh " .. tostring(hatid))
+        wait(.5)
+        camhat = char:FindFirstChild(hatname)
+    else
+        return error("missing the camera hat")
+    end
+end
+
+te(ct,game:GetService("RunService").Heartbeat:connect(function()
+    if camhat.Parent == nil then
+        notify("Warning", "Your camera hat has fallen, please re-execute", 10)
+        game.Players:Chat("-re")
+        char.Humanoid.Health = 0
+        for i,v in pairs(ct) do
+            v:Disconnect()
+        end
+    end
+    camhat.Handle.Velocity = Vector3.new(0,30,0)
+end))
+
+camhat.Handle:BreakJoints()
+camhat.Handle.CanCollide = false
+camhat.Handle.Transparency = camtransparency or 1
+
+local fakehat = camhat.Handle:Clone()
+fakehat.Anchored = true
+fakehat.Transparency = 1
+fakehat.Parent = char
+
+local offset = (BigCamera and bigcamoffset) or smallcamoffset
+te(ct,game:GetService("RunService").RenderStepped:Connect(function()
+    fakehat.CFrame = camera.CFrame
+    fakehat.Orientation = fakehat.Orientation + offset
+end))
+
+align(camhat.Handle,fakehat)
