@@ -1,0 +1,8 @@
+local player = game:GetService("Players").LocalPlayer
+local command = "/remove" -- there is a better way to do this, but for the sake of this post, im doing it the easy way
+
+player.Chatted:Connect(function(message) -- when the player chats
+    if message:lower():sub(1,#message) == command:lower() then -- this allows you to run the command even if you dont put the right capitilization, like if you say /RemOve, it will still work,
+        print("lol")
+    end
+end)
