@@ -1,5 +1,5 @@
 --made by ScareCrowV3RM
-local xrayHotkey = Enum.KeyCode.E
+local xrayHotkey = Enum.KeyCode.X
 
 local uis = game:GetService("UserInputService")
 
@@ -42,3 +42,11 @@ uis.InputBegan:Connect(function(inp, processed)
 		end
 	end
 end)
+
+
+wait(0.1)
+game.StarterGui:SetCore("SendNotification", {
+Title = "XRay"; -- the title (ofc)
+Text = "Hold [X] to activate the script"; -- what the text says (ofc)
+Duration = 10; -- how long the notification should in secounds
+})
