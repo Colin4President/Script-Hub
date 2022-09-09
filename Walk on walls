@@ -1,3 +1,5 @@
+-- https://youtu.be/Z5Cl47UdF1s
+-- https://controlc.com/19a39f78 ControlC backup
 --[[
 local _p = game:WaitForChild("Players")
 local _plr = _p.ChildAdded:Wait()
@@ -11551,12 +11553,5 @@ game:GetService("ContextActionService"):BindAction("Toggle", function(action, st
 		Controller = GravityController.new(PLAYERS.LocalPlayer)
 		Controller.GetGravityUp = GetGravityUp
 	end
-end, false, Enum.KeyCode.B)
+end, false, Enum.KeyCode.txt)
 print("end")
-
-game.StarterGui:SetCore("SendNotification", {
-	Title = "KATER ";
-	Text = "Toggle (B)";
-	Duration = 12;
-    Button1 = "OK";
-})
